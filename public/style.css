@@ -1,0 +1,20 @@
+.chat{
+    background-color: rgb(13, 243, 28);
+    padding: 12px;
+    margin: 4px 0px 4px 18px;
+    display: inline-block;
+}
+
+.info{
+    color:blue;
+    font-style: italic;
+}
+
+#msg{
+    color: red;
+    font-size: 24px;
+}
+
+h1{
+    color: rgb(237, 7, 126);
+}

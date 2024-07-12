@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit form</title>
+</head>
+<body>
+    <h3>Edit your chat</h3>
+    <hr/>
+    <h2>From : <%= chat.from %></h2>
+    <h2>TO : <%= chat.to %></h2>
+    <h4><%=chat.created_at.toString().split(" ")[4]%></h4>
+    <h4><%=chat.created_at.toString().split(" ").splice(0,4).join("-")%></h4>
+    <form method="post" action="/chats/<%= chat._id%>?_method=PATCH" >
+        <h3>Edit your Message</h3>
+        <textarea name="msg" ><%= chat.msg %></textarea><br>
+        <button type="submit">Edit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
